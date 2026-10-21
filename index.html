@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dehnee | Premium Perfumes</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+ 
+<!-- DEHNEE HEADER -->
+<header class="site-header" id="home">
+
+    <!-- Top announcement bar -->
+    <div class="announcement-bar">
+        <div class="announcement-track">
+            <span>Free Shipping all over UAE &amp; KSA</span>
+            <span>Good News! Cash on Delivery is now available across the UAE.</span>
+            <span>Free Shipping all over UAE &amp; KSA</span>
+            <span>Good News! Cash on Delivery is now available across the UAE.</span>
+        </div>
+    </div>
+
+    <!-- Logo and account row -->
+    <div class="header-main">
+        <div class="header-tools">
+            <a href="#scents" class="search-link" aria-label="Search">⌕</a>
+
+            <label class="language-select">
+                <select aria-label="Language">
+                    <option>English</option>
+                </select>
+            </label>
+        </div>
+
+        <a href="#home" class="site-logo">
+            <span>Dehnee</span>
+            <small>— SINCE 1990 —</small>
+        </a>
+
+        <div class="header-actions">
+            <a href="#account" aria-label="Account">♙</a>
+            <a href="#cart-section" aria-label="Shopping bag">
+                ♧ <span id="header-cart-count">(0)</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="main-navbar" aria-label="Main navigation">
+        <button class="menu-toggle" id="menu-toggle"
+                type="button" aria-expanded="false"
+                aria-controls="nav-links">
+            ☰ Menu
+        </button>
+
+        <div class="nav-links" id="nav-links">
+            <a href="#home">HOME</a>
+
+            <a href="#scents">SHOP⌄</a>
+
+            <a href="#scents">DISCOVER YOUR SCENT⌄</a>
+
+            <a href="#scents">BEST SELLER⌄</a>
+
+            <a href="#bundle-summary">COMBOS</a>
+
+            <a href="#footer">WORLDWIDE DISTRIBUTION</a>
+
+            <a href="#footer">BRANCHES</a>
+
+            <a href="#cart-section">TRACK YOUR ORDER</a>
+        </div>
+    </nav>
+
+</header>
+
+
+
+    <!-- MAIN CONTENT -->
+    
+<main>
+
+    <!-- CHOOSE YOUR SCENTS -->
+    <section id="scents" class="products-section">
+
+        <!-- HOME LINK AND COMPANY NAME -->
+        <div style="display: flex; justify-content: flex-start; align-items: center; gap: 5px; text-align: left; font-size: 9px; margin-bottom: 15px;">
+    <a href="https://dehnee.com/" title="Home" style="color: #555; text-decoration: none; font-size: 12px; font-weight: bold;">Home</a>
+    <span style="font-size: 12px; font-weight: bold;">/ Scent Collection</span>
+</div>
+
+        <h2>Get a discount!</h2>
+
+        <p class="subtitle">
+            Buy 2 AND GET ONE FREE
+        </p>
+
+        <div id="products" class="products"></div>
+
+
+        <!-- YOUR BUNDLE - UNCHANGED -->
+        <section
+            class="bundle-summary"
+            id="bundle-summary"
+            hidden
+        >
+
+            <div class="bundle-heading">
+                <h2>Your bundle:</h2>
+            </div>
+
+            <div class="selection-progress" hidden>
+                <span id="selected-count">0</span>/3 selected
+            </div>
+
+            <div
+                id="selected-products"
+                class="selected-products"
+            ></div>
+
+            <div class="price-summary">
+                <h3>
+                    Total:
+                    <span id="total">AED 0.00</span>
+                </h3>
+            </div>
+
+            <p id="message"></p>
+
+            <button
+                type="button"
+                id="add-to-bundle"
+                disabled
+            >
+                Add to cart
+            </button>
+
+            <p class="checkout-note">
+                Discounts will be applied at checkout.
+            </p>
+
+        </section>
+
+    </section>
+
+
+    <!-- CART SECTION -->
+    <section
+        id="cart-section"
+        class="cart-section"
+        hidden
+    >
+
+        <h2>Your Cart</h2>
+
+        <div id="cart-items" class="cart-items"></div>
+
+        <div class="cart-total">
+            <h3>
+                Final Total:
+                <span id="cart-total">AED 0.00</span>
+            </h3>
+        </div>
+
+    </section>
+
+</main>
+
+   
+<!-- FOOTER -->
+<footer class="footer" id="footer">
+    <div class="footer-container">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+            <a href="#home" class="footer-logo">
+                <span class="footer-logo-icon">〰</span>
+                <span>Dehnee</span>
+                <small>SINCE 1990</small>
+            </a>
+
+            <p>
+                Since 1990, Dehnee defined luxury with
+                timeless, long-lasting signature fragrances.
+            </p>
+        </div>
+
+        <!-- Branches -->
+        <div class="footer-column">
+            <h3>OUR BRANCHES</h3>
+            <a href="#">DEIRA CITY CENTRE</a>
+            <a href="#">SHINDAGHA CITY CENTRE</a>
+            <a href="#">DUBAI FESTIVAL CITY MALL</a>
+            <a href="#">SHARJAH CITY CENTRE</a>
+            <a href="#">IBN BATTUTA MALL</a>
+            <a href="#">AJMAN CITY CENTRE</a>
+            <a href="#">MALL OF UMM AL QUWAIN</a>
+        </div>
+
+        <!-- Policies -->
+        <div class="footer-column">
+            <h3>POLICIES</h3>
+            <a href="#">REFUND POLICY</a>
+            <a href="#">PRIVACY POLICY</a>
+            <a href="#">TRACK OUR ORDER</a>
+            <a href="#">TERMS &amp; CONDITIONS</a>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-column footer-contact">
+            <h3>CONTACT US</h3>
+
+            <p>
+                <a href="tel:+971585644849">
+                    +971 58 564 4849
+                </a>
+                <a href="mailto:marketing@dehnee.com">
+                    marketing@dehnee.com
+                </a>
+            </p>
+
+            <div class="social-links">
+                <a href="https://www.facebook.com/" aria-label="Facebook">f</a>
+                <a href="https://www.instagram.com/" aria-label="Instagram">◎</a>
+                <a href="https://www.youtube.com/" aria-label="YouTube">▶</a>
+                <a href="https://www.tiktok.com/" aria-label="TikTok">♪</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Currency selector -->
+    <div class="footer-currency">
+        <label for="currency">🇦🇪</label>
+        <select id="currency" aria-label="Select currency">
+            <option value="AED">AED</option>
+        </select>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>© 2026 DEHNEE. All rights reserved.</p>
+        <a href="#home">Back to Top ↑</a>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+    <!-- EXISTING JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
+
